@@ -18,7 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ReduxProvider>{children}</ReduxProvider>
+        <ReduxProvider>
+          <div className="bg-gray-50 min-h-screen">
+            <div className="max-w-screen-xl mx-auto py-5 px-5">{children}</div>
+          </div>
+        </ReduxProvider>
       </body>
     </html>
   );
